@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyundai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .logo {
+        height: 100px;
+        width: 100%;
+      }
+      .logo1 {
+        height: 100px;
+        width: 30%;
+        float: left;
+        /* background-color: black; */
+      }
+      .logo1 img {
+        height: 100px;
+        width: 100%;
+      }
+      .logo2 {
+        height: 100px;
+        width: 70%;
+        /* background-color: aqua; */
+        float: left;
+      }
+      .list {
+        height: 100px;
+        width: 100%;
+      }
+      .logo2 .list .list1 {
+        float: left;
+        list-style: none;
+        padding: 40px 10px 20px 10px;
+        /* line-height: 70px; */
+      }
+      .logo2 .list .list1 img {
+        height: 30px;
+        margin: -5px 0px 0px 0px;
+      }
+      .list1:hover {
+        color: darkseagreen;
+      }
+      .float {
+        height: 900px;
+        width: 100%;
+        /* background-color: lightgrey; */
+      }
+      /* .float1
+      {
+        height: 800px;
+        width: 100%;
+        background-color: aquamarine;
+        pad
+      } */
+      .float img {
+        height: 800px;
+        width: 90%;
+        /* background-color: aquamarine; */
+        margin: 55px;
+      }
+      .model {
+        height: 900px;
+        width: 100%;
+        /* background-color: aquamarine; */
+      }
+      .model1 {
+        height: 100x;
+        width: 100%;
+        /* background-color: blueviolet; */
+      }
+      h1 {
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .model2 {
+        height: 50px;
+        width: 100%;
+        /* background-color: aqua; */
+      }
+      .modellink 
+      {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        line-height: 50px;
+      }
+      img
+      {
+        height: 600px;
+        width: 100%;
+      }       
+      /* iframe
+      {
+        height: 500px;
+        width: 97%;
+      } */
+      .buttons
+      {
+        height: 90px;
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        background-color: lightgray;
+        padding-top: 30px;
+      } 
+      .buttons button
+      {
+        background-color: gray;
+        color: white;
+        border: none;
+        height: 40px;
+        width: 200px;
+        font-size: large;
+        margin: 0px 10px;
+        border-radius: 5px;
+      }
+      .Text
+      {
+        height: 100px;
+        width:100%;
+        background-color: #002c5f;
+        padding: 20px 0px 0px 100px;
+        margin: 0px 0px 50px 0px;
+        box-sizing: border-box;
+      }
+      .Text h3,
+      .Text h2
+      {
+        height: auto;
+        color: white;
+      }
+      .gallery
+      {
+        height: 400px;
+        width: 100%;
+      }
+      .gallery1
+      {
+        height: 400px;
+        width: 300px;
+        float: left;
+        padding: 0px 0px 0px 100px;
+      }
+      .gallery1 img
+      {
+        height: 400px;
+        width: 300px;
+      }
+       .gallery2
+      {
+        height: 400px;
+        width: 300px;
+        float: left;
+        padding: 0px 0px 0px 110px;
+      }
+      .gallery2 img
+      {
+        height: 400px;
+        width: 300px;
+      }
+      .gallery3
+      {
+        height: 400px;
+        width: 300px;
+        float: right;
+        padding: 0px 110px 0px 0px;
+      }
+      .gallery3 img
+      {
+        height: 400px;
+        width: 300px;
+      }
+      .para
+      {
+        color: darkblue;
+      }
+      .car
+      {
+        height: 700px;
+        width: 100%;
+      }
+      .car img
+      {
+        height: 600px;
+        width: 100%;
+        margin-top: 100px;
+      }
+      .button1
+      {
+        height: 100px;
+        width: 100%;
+      }
+      .button1 button
+      {
+        height: 55px;
+        width: 250px;
+        background-color: #002c5f;
+        color: white;
+        margin: 40px 0px 0px 550px;
+        border-radius: 10px;
+      }
+      .Text2
+      {
+        height: 150px;
+        width:100%;
+        background-color: #002c5f;
+        padding: 60px 0px 0px 100px;
+        margin: 50px 0px 50px 0px;
+        box-sizing: border-box;
+      }
+      .Text2 h4,
+      .Text2 h2
+      {
+        height: auto;
+        color: white;
+      }
+      .image
+      {
+        height: 500px;
+        width: 100%;
+      }
+      .img1
+      {
+        height: 400px;
+        width: 300px;
+        float: left;
+        padding: 0px 0px 0px 100px;
+        position: relative;
+      }
+      .img1 img
+      {
+        height: 400px;
+        width: 300px;
+      }
+      .img2
+      {
+        height: 400px;
+        width: 300px;
+        float: left;
+        padding: 0px 0px 0px 120px;
+        position: relative;
+      }
+      .img2 img
+      {
+        height: 400px;
+        width: 300px;
+      }
+      .img3
+      {
+        height: 400px;
+        width: 300px;
+        float: left;
+        padding: 0px 0px 0px 130px;
+        position: relative;
+      }
+      .img3 img
+      {
+        height: 400px;
+        width: 300px;
+      }
+      .img1 p
+      {
+        position: absolute;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        top: 100px;
+        box-sizing: border-box;
+        opacity: 0%;
+        padding: 19px;
+      }
+      .img1 p:hover
+      {
+        background-color: #002c5f;
+        color: white;
+        opacity: 100%;
+      }
+      .img2 p
+      {
+        position: absolute;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        top: 100px;
+        box-sizing: border-box;
+        opacity: 0%;
+        padding: 19px;
+      }
+      .img2 p:hover
+      {
+        background-color: #002c5f;
+        color: white;
+        opacity: 100%;
+      }
+      .img3 p
+      {
+        position: absolute;
+        font-size: 20px;
+        width: 300px;
+        height: auto;
+        top: 100px;
+        box-sizing: border-box;
+        opacity: 0%;
+        padding: 19px;
+      }
+      .img3 p:hover
+      {
+        background-color: #002c5f;
+        color: white;
+        opacity: 100%;
+      }
+      .news
+      {
+        height: 400px;
+        width: 100%;
+        background-color: #f6f3f2;
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+      .news h1
+      {
+        text-align: center;
+      }
+      .new
+      {
+        text-align: center;
+        background-color: white;
+        height: 250px;
+        width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+      }
+      .new button
+      {
+        height: 60px;
+        width: 250px;
+        background-color: #002c5f;
+        color: white;
+        border-radius: 10px;
+      }
+      .news2
+      {
+        height: 200px;
+        width: 100%;
+        /* background-color: #f6f3f2; */
+        box-sizing: border-box;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+      .news2 h1
+      {
+        font-size: 40px;
+      }
+      .news2 h4
+      {
+        text-align: center;
+        font-size: 15px;
+      }
+      .Selection
+      {
+        text-align: center;
+        background-color: #f6f3f2;
+        height: 100px;
+        width: 100%;
+      }
+      .Selection select
+      {
+        height: 40px;
+        width: 200px;
+        margin: 30px;
+        border-radius: 5px;
+      }
+      .button2
+      {
+        height: 100px;
+        width: 100%;
+        background-color: #f6f3f2;
+        text-align: center;
+        line-height: 100px;
+        box-sizing: border-box;
+      }
+      .button2 button
+      {
+        border-radius: 10px;
+        height: 50px;
+        width: 150px;
+        color: white;
+        background-color: #002c5f;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <div class="logo1">
+        <img src="images/download.png" alt="" />
+      </div>
+      <div class="logo2">
+        <ul class="list">
+          <li class="list1">Find a car</li>
+          <li class="list1">Click to buy</li>
+          <li class="list1">Connect to service</li>
+          <li class="list1">Hyundai Story</li>
+          <li class="list1">Mobility Solutions</li>
+          <li class="list1">Contect Us</li>
+          <li class="list1"><img src="images/contect.png" alt="" /></li>
+          <li class="list1"><img src="images/location.png" alt="" /></li>
+          <!-- <li class="list1"><img src="images/share.png" alt=""></li> -->
+          <li class="list1"><img src="images/searc.png" alt="" /></li>
+        </ul>
+      </div>
+      <hr />
+    </div>
+    <div class="float">
+      <div class="float1">
+        <img src="images/venue-n-line-homepage-top-image-pc1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="model">
+      <div class="model1">
+        <h1>Models</h1>
+      </div>
+      <div class="model2">
+        <center>
+          <a href="images/Car2.jpg" class="modellink" target="Car">All</a>
+          <a href="images/Car3.png" class="modellink" target="Car">SUV</a>
+          <a href="images/Car4.png" class="modellink" target="Car">Sedan</a>
+          <a href="images/Car5.jpg" class="modellink" target="Car">Hatchback</a>
+          <a href="images/Car6.png" class="modellink" target="Car">Electric</a>
+        </center>
+      </div>
+      <div class="model3">
+        <!-- <iframe src="images/Car2.jpg" frameborder="0" name="Car"></iframe> -->
+        <img src="images/Car2.jpg" alt="" name="Car" >
+      </div>
+    </div>
+    <div class="buttons">
+      <button>Request a Test Drive</button>
+      <button>Download E-Brochure</button>
+      <button>Click To Buy</button>
+      <button>Prices</button>
+    </div>
+    <div class="Text">
+      <h3>WHAT'S NEW</h3>
+      <h2>See what's happening</h2>
+    </div>
+    <div class="gallery">
+      <div class="gallery1">
+        <img src="images/gallery1.jpg" alt="">
+        <p class="para">INNOVATION</p>
+        <p>Beyond Mobility</p>
+      </div>
+      <div class="gallery2">
+        <img src="images/gallery2.jpg" alt="">
+        <p class="para">BRAND</p>
+        <p>#The Drive Within</p>
+      </div>
+      <div class="gallery3">
+        <img src="images/gallery3.jpg" alt="">
+        <p class="para">BRAND</p>
+        <p>Live the SUV Life</p>
+      </div>
+    </div>
+    <div class="car">
+      <img src="images/Hyundai Car2.jpg" alt="">
+    </div>
+    <div class="button1">
+      <button>Know More</button>
+    </div>
+    <div class="Text2">
+      <h4>SOCIAL</h4><br>
+      <h2>Check out what's trending</h2>
+    </div>
+    <div class="image">
+      <div class="img1">
+        <img src="images/Img_5.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, enim! Et aperiam aliquam dignissimos odit, voluptas quaerat quam tenetur nobis saepe distinctio, eligendi eveniet alias fugiat sunt exercitationem. Voluptas, officiis!</p>
+      </div>
+      <div class="img2">
+        <img src="images/Img_6.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, enim! Et aperiam aliquam dignissimos odit, voluptas quaerat quam tenetur nobis saepe distinctio, eligendi eveniet alias fugiat sunt exercitationem. Voluptas, officiis!</p>
+      </div>
+      <div class="img3">
+        <img src="images/Img_7.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, enim! Et aperiam aliquam dignissimos odit, voluptas quaerat quam tenetur nobis saepe distinctio, eligendi eveniet alias fugiat sunt exercitationem. Voluptas, officiis!</p>
+      </div>
+    </div>
+    <div class="news">
+      <h1>News</h1>
+      <div class="new">
+        <h1>Hyundai Motor India Augments Digital Connectivity with Bluelink<sup style="font-size: 15px;">TM</sup></h1>
+        <button>Learn More</button>
+      </div>
+    </div>
+    <div class="news2">
+      <h1>Find a Dealer & Website</h1>
+      <h4>Locate your nearest dealership and visit website</h4>
+    </div>
+    <div class="Selection">
+      <select>
+        <option>Select Dealership</option>
+        <option>Sales Showroom</option>
+        <option>Service Workshop</option>
+        <option>Used Car</option>
+      </select>
+      <select>
+        <option>Select a Model</option>
+        <option>Creta</option>
+        <option>i10</option>
+        <option>i20</option>
+      </select>
+      <select>
+        <option>Select State</option>
+        <option>Gujarat</option>
+        <option>Maharashtra</option>
+        <option>Tamilnadu</option>
+      </select>
+      <select>
+        <option>Select City</option>
+        <option>Ahmedabad</option>
+        <option>Mumbai</option>
+        <option>Bangluru</option>
+      </select>
+    </div>
+    <div class="button2">
+      <button>Search</button>
+    </div>
+  </body>
+</html>
